@@ -73,9 +73,8 @@ class Clock {
 
 }
 
-window.setInterval(
-    function(){
-        let clock = new Clock();
-    }
-    , 1000);
-//let clock = new Clock();
+window.setTimeout(
+function(){
+    let clock = new Clock();
+}
+, 1000);

@@ -22,7 +22,7 @@ body {
 .clock {
     width: 360px;
     height: 360px;
-    padding: 25px;
+    padding: 35px;
 }
 .inner {
     position: relative;
@@ -83,7 +83,7 @@ body {
 .graduation {
     display: block;
     position: absolute;
-    top: 7.5px;
+    /*top: 7.5px;*/
     left: 50%;
     width: 4px;
     height: 20px;
@@ -92,6 +92,21 @@ body {
     transform: rotate(0deg) translateX(-50%);
     -webkit-transform-origin: 0 140px;
     transform-origin: 0 140px;
+}
+.graduation:nth-child(3n+1) span {
+    color: #ae7070;
+    font-size: 19px;
+}
+.number_wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.graduationNumber {
+    position: absolute;
+    top: 25px;
+    font-weight: 700;
 }
 .graduation:nth-child(2) {
     -webkit-transform: rotate(7deg) translateX(-50%);

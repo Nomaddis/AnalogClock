@@ -1,7 +1,9 @@
-/** Our wonderfull little clock **/
+/** Simple analog clock**/
 class Clock {
     /**
-     * Clock initialization
+     * @hourHand {HTMLElement} of hour hand
+     * @minuteHand {HTMLElement} of minute hand
+     * @secondHand {HTMLElement} of second hand
      */
     constructor() {
         this.hourHand   = document.querySelector('.hour.hand');
@@ -73,6 +75,9 @@ class Clock {
 
 }
 
+/*
+ * init analog clock using clock Class
+ */
 window.setTimeout(
 function(){
     let clock = new Clock();
